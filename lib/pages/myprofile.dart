@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';
 
@@ -96,15 +98,148 @@ class _MyprofilescreenState extends State<MyProfileScreen> {
                       ),
                     ]),
                 Padding(
+                  //di ko ma center
                   padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
-                  child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Text('helo world',
-                            style:
-                                TextStyle(fontFamily: 'Roboto', fontSize: 15))
-                      ]),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Builder(builder: (context) {
+                            return const Text(
+                              '[Display Name]',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 40,
+                                color: Colors.white,
+                              ),
+                            );
+                          })
+                        ],
+                      ),
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Builder(builder: (context) {
+                            return const Text(
+                              '[Email]',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 30,
+                                color: Colors.white,
+                              ),
+                            );
+                          })
+                        ],
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                                width: 300,
+                                height: 330,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFF4B39EF),
+                                  boxShadow: const [
+                                    BoxShadow(
+                                      blurRadius: 10,
+                                      color: Color(0xFF1F2225),
+                                      offset: Offset(10, 10),
+                                    )
+                                  ],
+                                  borderRadius: BorderRadius.circular(20),
+                                  border: Border.all(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Padding(
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              0, 10, 0, 0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const [
+                                          Text(
+                                            'SETTINGS',
+                                            style: TextStyle(
+                                              fontFamily: 'Lexend Deca',
+                                              fontSize: 26,
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              5, 10, 0, 0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: const [
+                                          Icon(
+                                            Icons.person_sharp,
+                                            color: Colors.white,
+                                            size: 24,
+                                          ),
+                                          Text(
+                                            'ACCOUNT',
+                                            style: TextStyle(
+                                              fontFamily: 'Lexend Deca',
+                                              color: Colors.white,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              0, 5, 0, 0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          OutlinedButton(
+                                            onPressed: () {},
+                                            child: const Text(
+                                              'Edit Profile',
+                                              style: TextStyle(
+                                                  fontFamily: 'Roboto',
+                                                  fontSize: 25),
+                                            ),
+                                            style: OutlinedButton.styleFrom(
+                                              side: const BorderSide(
+                                                  width: 1.0,
+                                                  color: Colors.white),
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ))
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),

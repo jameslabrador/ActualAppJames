@@ -85,9 +85,9 @@ class _EditMyProfWidgetState extends State<EditMyProfWidget> {
                               ),
                               radius: 90,
                               backgroundColor: Colors.transparent,
-                              borderWidth: 10,
+                              borderWidth: 9,
                               initialsText: const Text(
-                                "AD",
+                                "AB",
                                 style: TextStyle(
                                     fontSize: 40, color: Colors.white),
                               ),

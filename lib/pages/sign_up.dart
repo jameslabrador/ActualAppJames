@@ -345,6 +345,7 @@ class _SignUpState extends State<SignUp> {
                           // );
                           // _btnController.reset();
                           // }
+
                           // },
                           )
                     ],
