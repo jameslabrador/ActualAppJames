@@ -1,4 +1,5 @@
 import 'package:actualapp/pages/myprofile.dart';
+import 'package:actualapp/pages/settings.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';
 
@@ -151,6 +152,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
+                          primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 70, vertical: 20),
                           shape: const StadiumBorder()),
@@ -222,6 +224,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
+                          primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 70, vertical: 20),
                           shape: const StadiumBorder()),
@@ -292,6 +295,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
+                          primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 70, vertical: 20),
                           shape: const StadiumBorder()),
@@ -330,6 +334,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   children: [
                     ElevatedButton(
                       onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const settings()));
                         // onPressed: () async {
                         //                         setState(() => _loadingButton1 = true);
                         //                         try {
@@ -349,6 +357,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
+                          primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 70, vertical: 20),
                           shape: const StadiumBorder()),
@@ -393,7 +402,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -419,6 +428,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
+                          primary: Colors.lightBlue,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 70, vertical: 20),
                           shape: const StadiumBorder()),
                     )
                     // FFButtonWidget(
