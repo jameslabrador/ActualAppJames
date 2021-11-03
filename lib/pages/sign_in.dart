@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 
+import 'dailyrewards.dart';
+
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -237,7 +239,13 @@ class _SignInState extends State<SignIn> {
                                 child: const Text('LOG IN',
                                     style: TextStyle(color: Colors.white)),
                                 controller: _btnController,
-                                onPressed: () {}
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              const Dailyrewards()));
+                                }
                                 // onPressed: () async {
                                 // try {
                                 // _btnController.start();

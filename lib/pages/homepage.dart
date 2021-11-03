@@ -1,5 +1,8 @@
+import 'package:actualapp/pages/dailyrewards.dart';
 import 'package:actualapp/pages/myprofile.dart';
 import 'package:actualapp/pages/settings.dart';
+import 'package:actualapp/pages/tournament.dart';
+import 'package:actualapp/splash_screen.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';
 
@@ -133,6 +136,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   children: [
                     ElevatedButton(
                       onPressed: () {
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => const Dailyrewards()));
                         // onPressed: () async {
                         //                         setState(() => _loadingButton1 = true);
                         //                         try {
@@ -148,13 +155,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         'Play',
                         style: TextStyle(
                             fontFamily: 'poppins',
-                            fontSize: 30,
+                            fontSize: 20,
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
                           primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 70, vertical: 20),
+                              horizontal: 50, vertical: 15),
                           shape: const StadiumBorder()),
                     )
                     // FFButtonWidget(
@@ -205,6 +212,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   children: [
                     ElevatedButton(
                       onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Tournament()));
                         // onPressed: () async {
                         //                         setState(() => _loadingButton1 = true);
                         //                         try {
@@ -220,13 +231,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         'Tournament',
                         style: TextStyle(
                             fontFamily: 'poppins',
-                            fontSize: 30,
+                            fontSize: 20,
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
                           primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 70, vertical: 20),
+                              horizontal: 50, vertical: 15),
                           shape: const StadiumBorder()),
                     )
                     // FFButtonWidget(
@@ -291,13 +302,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         'Analytics',
                         style: TextStyle(
                             fontFamily: 'poppins',
-                            fontSize: 30,
+                            fontSize: 20,
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
                           primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 70, vertical: 20),
+                              horizontal: 50, vertical: 15),
                           shape: const StadiumBorder()),
                     )
                     // FFButtonWidget(
@@ -353,13 +364,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         'Settings',
                         style: TextStyle(
                             fontFamily: 'poppins',
-                            fontSize: 30,
+                            fontSize: 20,
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
                           primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 70, vertical: 20),
+                              horizontal: 50, vertical: 15),
                           shape: const StadiumBorder()),
                     )
                     // FFButtonWidget(
@@ -409,6 +420,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   children: [
                     ElevatedButton(
                       onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SplashScreen()));
                         // onPressed: () async {
                         //                         setState(() => _loadingButton1 = true);
                         //                         try {
@@ -424,13 +439,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         'Exit Game',
                         style: TextStyle(
                             fontFamily: 'poppins',
-                            fontSize: 30,
+                            fontSize: 20,
                             color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
                           primary: Colors.lightBlue,
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 70, vertical: 20),
+                              horizontal: 50, vertical: 15),
                           shape: const StadiumBorder()),
                     )
                     // FFButtonWidget(
